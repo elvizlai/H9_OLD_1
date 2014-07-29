@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/login_bg"
+              android:gravity="bottom|center_horizontal"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/logo_wz"/>
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/acc_title"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/acc_title"/>
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/acc_title"
+            android:layout_toRightOf="@id/acc_title"
+            android:hint="@string/account_hint"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/psw_title"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/psw_tittle"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/psw_title"
+            android:layout_toRightOf="@id/psw_title"
+            android:hint="@string/password_hint"
+            android:password="true"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingTop="8dp">
+
+        <CheckBox
+            android:id="@+id/isRempsw"
+            style="@style/CustomCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:text="@string/rem_password"
+            android:textColor="@color/black"/>
+
+        <CheckBox
+            android:id="@+id/isAutologin"
+            style="@style/CustomCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_login"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="192dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:text="@string/login_btn"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/copy_right"/>
+
+        <Button
+            android:id="@+id/netSetting"
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/setting_btn"/>
+    </LinearLayout>
+
+
+</LinearLayout>

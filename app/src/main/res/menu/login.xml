@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+            android:id="@+id/action_settings"
+            android:title="@string/net_setting"/>
+
+    <item
+            android:id="@+id/about_me"
+            android:title="关于"/>
+
+</menu>
